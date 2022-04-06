@@ -47331,7 +47331,7 @@ ul.inbox-pagination li {
     -webkit-box-pack: end;
     justify-content: flex-end;
     overflow: hidden;
-    background: url(../images/media/profile-background1.jpg) no-repeat;
+    background: url(../images//media//bg-img1.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -47352,6 +47352,14 @@ ul.inbox-pagination li {
     border-radius: 50%;
     margin-top: 55px;
     margin-left: -9px;
+}
+.profile-cover__img .profile-img-2>img {
+    max-width: 120px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: -9px;
+    background-color: #fff;
 }
 
 .profile-cover__img .profile-img-content {

@@ -1,7 +1,8 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
 
 function CampaignList() {
-
+    let history = useHistory();
     const list = [
         {
             id: 1,
@@ -152,7 +153,8 @@ function CampaignList() {
                                 </div>
                                 <div className="col-sm-12 col-md-6">
                                     <div className='text-end'>
-                                        <button type="button" className="btn mb-5" style={{ border: '1px solid #6c5ffc', color: '#6c5ffc', boxShadow: '0px 5px 5px 0px rgba(0,0,0,0.07)' }}>
+                                        <button type="button" className="btn mb-5" style={{ border: '1px solid #6c5ffc', color: '#6c5ffc', boxShadow: '0px 5px 5px 0px rgba(0,0,0,0.07)' }}
+                                            onClick={() => { history.push("/campaign/insert") }}>
                                             Kampanya Oluştur
                                         </button>
                                     </div>
