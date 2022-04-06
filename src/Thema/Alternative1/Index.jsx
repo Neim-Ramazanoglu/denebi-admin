@@ -15,6 +15,7 @@ function Index() {
         return <div className="page">
             <div className="page-main">
                 <Header leftNav={leftNav} state={state} setState={setState} onChange={onChange} />
+                <div style={{ backgroundColor: '#6c5ffc', height: '300px', width: '100%', position: 'absolute', left: '0', top: '75px', }} />
                 <div className="main-content app-content mt-0" >
                     <div className="side-app" >
                         <div className="main-container container-fluid">

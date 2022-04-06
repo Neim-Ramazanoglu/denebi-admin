@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink, useHistory, useParams } from "react-router-dom";
 import "../Assets/css/style.css"
 import "../Assets/css/style.css.map"
 import "../Assets/css/skin-modes.css"
@@ -9,8 +10,8 @@ import "../Assets/css/animated.css"
 import "../Assets/css/transparent-style.scss"
 import { useState } from 'react'
 import pic from "../Assets/images/users/0.jpg"
-import { NavLink, useHistory, useParams } from "react-router-dom";
-
+import notification from '../Assets/svg/notification.svg'
+import question from '../Assets/svg/question-mark.svg'
 function Header(props) {
     const url = useParams();
     var history = useHistory();
@@ -24,17 +25,17 @@ function Header(props) {
 
 
     return <>
-        <div className="app-header header sticky" style={{ marginBottom: "-74px" }}>
+        <div className="app-header header sticky" style={{ marginBottom: "-74px", backgroundColor: '#6c5ffc', borderBottom: '1px solid #6c5ffc' }}>
             <div className="container-fluid main-container">
                 <div className="d-flex">
-                    <a
-                        aria-label="Hide Sidebar"
-                        className="app-sidebar__toggle"
-                        data-bs-toggle="sidebar"
-                        onClick={props.onChange}
-                        style={{ cursor: "pointer" }}
-                    />
+
                     {/* sidebar-toggle*/}
+                    <div className="search-wrapper w-100">
+                        <div className="landing-search my-2">
+                            <i className="fa fa-search " style={{ color: '#6c5ffc', fontSize: '22px', verticalAlign: 'middle', paddingLeft: '5px' }} />
+                            <input className='landing-search-input' placeholder='Ara'></input>
+                        </div>
+                    </div>
                     <a className="logo-horizontal " >
 
                         <img
@@ -52,7 +53,7 @@ function Header(props) {
                         </div>
                     </a>
                     {/* LOGO */}
-                    <div className="d-flex order-lg-2 ms-auto header-right-icons">
+                    <div className="d-flex " style={{ justifyContent: 'flex-end' }}>
                         <div className="d-flex country">
                             <a
                                 className="nav-link icon text-center"
@@ -60,15 +61,17 @@ function Header(props) {
                             >
                             </a>
                         </div>
-                        <div className="d-flex order-lg-2">
-                            <div className="dropdown d-flex profile-1">
-                                <span className='text-capitalize'>username</span>
+                        <div className="d-flex " >
+                            <div className="dropdown d-flex profile-1" style={{ justifyContent: 'flex-end' }}>
+                                <img src={notification} style={{ width: '22px', verticalAlign: 'middle', marginRight: '30px' }} />
+                                <img src={question} style={{ width: '22px', verticalAlign: 'middle', marginRight: '20px' }} />
                                 <img
                                     src={pic}
                                     alt="profile-user"
-                                    className="avatar  profile-user brround cover-image"
+                                    className="avatar  profile-user brround cover-image me-3"
                                     style={{ marginLeft: "15px" }}
                                 />
+                                <span className='text-capitalize text-white'>Admin</span>
                             </div>
                         </div>
                     </div>
@@ -113,6 +116,13 @@ function Header(props) {
                         />
 
                     </a>
+                    <a
+                        aria-label="Hide Sidebar"
+                        className="app-sidebar__toggle "
+                        data-bs-toggle="sidebar"
+                        onClick={props.onChange}
+                        style={{ cursor: "pointer", transform: 'rotate(180deg)' }}
+                    />
                     {/* LOGO */}
                 </div>
                 <div className="main-sidemenu is-expanded" >
