@@ -57,10 +57,10 @@ function CampaignInsert() {
                                                                             data-bs-placeholder="Select Country"
                                                                         >
                                                                             <option value="" disabled selected hidden>İşletme Seçiniz</option>
-                                                                            <option value="br">Brazil</option>
-                                                                            <option value="cz">Czech Republic</option>
-                                                                            <option value="de">Germany</option>
-                                                                            <option value="pl">Poland </option>
+                                                                            <option value="br">İşletme 1</option>
+                                                                            <option value="cz">İşletme 2</option>
+                                                                            <option value="de">İşletme 3</option>
+                                                                            <option value="pl">İşletme 4</option>
                                                                         </select>
 
                                                                     </div>
@@ -75,21 +75,64 @@ function CampaignInsert() {
 
                                 </div>
                                 <div className="tab-pane" id="tab6">
-                                    <span
-                                        className="avatar avatar-xl brround cover-image"
-                                        style={{ background: 'url("https://picsum.photos/150/150") center center' }}
-                                    >
-                                        <label className="badge rounded-pill avatar-icons bg-yellow"
-                                            data-kt-image-input-action="change"
-                                            data-bs-toggle="tooltip"
-                                            title=""
-                                            data-bs-original-title="Change avatar"
-                                            style={{ width: '25px', height: '25px' }}
-                                        >
-                                            <i className="fe fe-bell fs-12" />
-                                            <input type="file" name="avatar" accept=".png, .jpg, .jpeg" style={{ display: 'none' }} />
-                                        </label>
-                                    </span>
+                                    <div className="row">
+                                        <div className="col-6">
+                                            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                                <div style={{ borderLeft: '3px solid var(--green)', borderRadius: '10px', height: '40px', position: 'absolute' }} />
+
+                                                <div style={{ marginLeft: '15px' }}>
+                                                    <div style={{ fontWeight: 'bold' }}>
+                                                        Fiş Kabul
+                                                    </div>
+                                                    <div style={{ fontSize: '12px' }}>
+                                                        Kampanyaya katılım için fiş zorunludur.
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label className="custom-control custom-checkbox-md">
+                                                        <input
+                                                            type="checkbox"
+                                                            className="custom-control-input"
+                                                            name="example-checkbox5"
+                                                            defaultValue="option5"
+                                                            defaultChecked=""
+                                                        />
+                                                        <span className="custom-control-label"></span>
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="row mt-5">
+                                        <div className="col-6">
+                                            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                                <div style={{ borderLeft: '3px solid red', borderRadius: '10px', height: '40px', position: 'absolute' }} />
+
+                                                <div style={{ marginLeft: '15px' }}>
+                                                    <div style={{ fontWeight: 'bold' }}>
+                                                        Çekiliş
+                                                    </div>
+                                                    <div style={{ fontSize: '12px' }}>
+
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label className="custom-control custom-checkbox-md">
+                                                        <input
+                                                            type="checkbox"
+                                                            className="custom-control-input"
+                                                            name="example-checkbox5"
+                                                            defaultValue="option5"
+                                                            defaultChecked=""
+                                                        />
+                                                        <span className="custom-control-label"></span>
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
                                 <div className="tab-pane" id="tab7">
