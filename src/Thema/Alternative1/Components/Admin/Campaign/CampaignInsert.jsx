@@ -9,6 +9,82 @@ function CampaignInsert() {
         from: null,
         to: null
     });
+
+    const List = [
+        {
+            photo: 'https://picsum.photos/id/15/200',
+            name: 'Ürün Adı',
+            detail: 'Ürün Açıklaması',
+        },
+        {
+            photo: 'https://picsum.photos/id/16/200',
+            name: 'Ürün Adı',
+            detail: 'Ürün Açıklaması',
+        },
+        {
+            photo: 'https://picsum.photos/id/17/200',
+            name: 'Ürün Adı',
+            detail: 'Ürün Açıklaması',
+        },
+        {
+            photo: 'https://picsum.photos/id/18/200',
+            name: 'Ürün Adı',
+            detail: 'Ürün Açıklaması',
+        },
+        {
+            photo: 'https://picsum.photos/id/25/200',
+            name: 'Ürün Adı',
+            detail: 'Ürün Açıklaması',
+        },
+        {
+            photo: 'https://picsum.photos/id/18/200',
+            name: 'Ürün Adı',
+            detail: 'Ürün Açıklaması',
+        },
+        {
+            photo: 'https://picsum.photos/id/25/200',
+            name: 'Ürün Adı',
+            detail: 'Ürün Açıklaması',
+        },
+    ]
+
+    const List1 = [
+        {
+            photo: 'https://picsum.photos/id/15/200',
+            name: 'İşletme Adı',
+            detail: 'İşletme Bilgisi',
+        },
+        {
+            photo: 'https://picsum.photos/id/16/200',
+            name: 'İşletme Adı',
+            detail: 'İşletme Bilgisi',
+        },
+        {
+            photo: 'https://picsum.photos/id/17/200',
+            name: 'İşletme Adı',
+            detail: 'İşletme Bilgisi',
+        },
+        {
+            photo: 'https://picsum.photos/id/18/200',
+            name: 'İşletme Adı',
+            detail: 'İşletme Bilgisi',
+        },
+        {
+            photo: 'https://picsum.photos/id/25/200',
+            name: 'İşletme Adı',
+            detail: 'İşletme Bilgisi',
+        },
+        {
+            photo: 'https://picsum.photos/id/18/200',
+            name: 'İşletme Adı',
+            detail: 'İşletme Bilgisi',
+        },
+        {
+            photo: 'https://picsum.photos/id/25/200',
+            name: 'İşletme Adı',
+            detail: 'İşletme Bilgisi',
+        },
+    ]
     return (
         <div>
             <div className="page-header">
@@ -213,8 +289,217 @@ function CampaignInsert() {
                                                 </div>
                                             </div>
                                             <div className="row mt-5">
-
-
+                                                <label className="form-label mb-3">Kampanya Başlığı</label>
+                                                <div style={{ width: '250px' }} >
+                                                    <div className='d-flex justify-content-between' style={{ border: '1px solid #808080', padding: '3px', borderRadius: '10px' }}>
+                                                        <div style={{ marginLeft: '4px', paddingRight: '4px', borderRight: '1px solid black' }}>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width={24}
+                                                                height={24}
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                            >
+                                                                <rect
+                                                                    opacity="0.3"
+                                                                    x={2}
+                                                                    y={2}
+                                                                    width={20}
+                                                                    height={20}
+                                                                    rx={10}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                                <rect
+                                                                    x="6.01041"
+                                                                    y="10.9247"
+                                                                    width={12}
+                                                                    height={2}
+                                                                    rx={1}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                            </svg>
+                                                        </div>
+                                                        <input defaultValue={50} style={{ width: '60%', border: 'none' }} />
+                                                        <div style={{ marginRight: '4px', paddingLeft: '4px', borderLeft: '1px solid #808080' }}>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width={24}
+                                                                height={24}
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                            >
+                                                                <rect
+                                                                    opacity="0.3"
+                                                                    x={2}
+                                                                    y={2}
+                                                                    width={20}
+                                                                    height={20}
+                                                                    rx={10}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                                <rect
+                                                                    x="10.8891"
+                                                                    y="17.8033"
+                                                                    width={12}
+                                                                    height={2}
+                                                                    rx={1}
+                                                                    transform="rotate(-90 10.8891 17.8033)"
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                                <rect
+                                                                    x="6.01041"
+                                                                    y="10.9247"
+                                                                    width={12}
+                                                                    height={2}
+                                                                    rx={1}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row mt-5">
+                                                <label className="form-label mb-3">Satın alınacak denebi puanı</label>
+                                                <div style={{ width: '250px' }} >
+                                                    <div className='d-flex justify-content-between' style={{ border: '1px solid #808080', padding: '3px', borderRadius: '10px' }}>
+                                                        <div style={{ marginLeft: '4px', paddingRight: '4px', borderRight: '1px solid black' }}>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width={24}
+                                                                height={24}
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                            >
+                                                                <rect
+                                                                    opacity="0.3"
+                                                                    x={2}
+                                                                    y={2}
+                                                                    width={20}
+                                                                    height={20}
+                                                                    rx={10}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                                <rect
+                                                                    x="6.01041"
+                                                                    y="10.9247"
+                                                                    width={12}
+                                                                    height={2}
+                                                                    rx={1}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                            </svg>
+                                                        </div>
+                                                        <input defaultValue={50} style={{ width: '60%', border: 'none' }} />
+                                                        <div style={{ marginRight: '4px', paddingLeft: '4px', borderLeft: '1px solid #808080' }}>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width={24}
+                                                                height={24}
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                            >
+                                                                <rect
+                                                                    opacity="0.3"
+                                                                    x={2}
+                                                                    y={2}
+                                                                    width={20}
+                                                                    height={20}
+                                                                    rx={10}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                                <rect
+                                                                    x="10.8891"
+                                                                    y="17.8033"
+                                                                    width={12}
+                                                                    height={2}
+                                                                    rx={1}
+                                                                    transform="rotate(-90 10.8891 17.8033)"
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                                <rect
+                                                                    x="6.01041"
+                                                                    y="10.9247"
+                                                                    width={12}
+                                                                    height={2}
+                                                                    rx={1}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row mt-5">
+                                                <label className="form-label mb-3">1 Kullanıcıya verilecek olan ortalama denebi puanı</label>
+                                                <div style={{ width: '250px' }} >
+                                                    <div className='d-flex justify-content-between' style={{ border: '1px solid #808080', padding: '3px', borderRadius: '10px' }}>
+                                                        <div style={{ marginLeft: '4px', paddingRight: '4px', borderRight: '1px solid black' }}>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width={24}
+                                                                height={24}
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                            >
+                                                                <rect
+                                                                    opacity="0.3"
+                                                                    x={2}
+                                                                    y={2}
+                                                                    width={20}
+                                                                    height={20}
+                                                                    rx={10}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                                <rect
+                                                                    x="6.01041"
+                                                                    y="10.9247"
+                                                                    width={12}
+                                                                    height={2}
+                                                                    rx={1}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                            </svg>
+                                                        </div>
+                                                        <input defaultValue={50} style={{ width: '60%', border: 'none' }} />
+                                                        <div style={{ marginRight: '4px', paddingLeft: '4px', borderLeft: '1px solid #808080' }}>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width={24}
+                                                                height={24}
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                            >
+                                                                <rect
+                                                                    opacity="0.3"
+                                                                    x={2}
+                                                                    y={2}
+                                                                    width={20}
+                                                                    height={20}
+                                                                    rx={10}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                                <rect
+                                                                    x="10.8891"
+                                                                    y="17.8033"
+                                                                    width={12}
+                                                                    height={2}
+                                                                    rx={1}
+                                                                    transform="rotate(-90 10.8891 17.8033)"
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                                <rect
+                                                                    x="6.01041"
+                                                                    y="10.9247"
+                                                                    width={12}
+                                                                    height={2}
+                                                                    rx={1}
+                                                                    fill="#6c5ffc"
+                                                                />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="col-6">
@@ -228,52 +513,93 @@ function CampaignInsert() {
                                     </div>
                                 </div>
                                 <div className="tab-pane" id="tab7">
-                                    <div className='checkbox-div' style={{ width: '35%', overflowX: 'scroll', whiteSpace: 'nowrap' }}>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" name="checkbox" />
-                                            <span class="checkmark">kategori</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" name="checkbox" />
-                                            <span class="checkmark">kategori</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" name="checkbox" />
-                                            <span class="checkmark">kategori</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" name="checkbox" />
-                                            <span class="checkmark">kategori</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" name="checkbox" />
-                                            <span class="checkmark">kategori</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" name="checkbox" />
-                                            <span class="checkmark">kategori</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" name="checkbox" />
-                                            <span class="checkmark">kategori</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" name="checkbox" />
-                                            <span class="checkmark">kategori</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" name="checkbox" />
-                                            <span class="checkmark">kategori</span>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" name="checkbox" />
-                                            <span class="checkmark">kategori</span>
-                                        </label>
+                                    <div className="row">
+                                        <div className="col-6">
+                                            <label className="form-label mb-3"> İlişkili Ürünler</label>
+                                            <div className="e-table px-5 pb-5" style={{ border: '1px dashed black', borderRadius: '10px', overflow: 'scroll', whiteSpace: 'nowrap', height: '350px' }}>
+                                                <div className="table-responsive table-lg">
+                                                    <table className="table mb-0">
+                                                        <tbody>
+                                                            {
+                                                                List?.map((item, index) => {
+                                                                    return (
+                                                                        <tr>
+                                                                            <td className="align-middle text-center">
+                                                                                <img
+                                                                                    alt="image"
+                                                                                    className="avatar avatar-md br-7"
+                                                                                    src={item.photo}
+                                                                                />
+                                                                            </td>
+                                                                            <td className="text-nowrap align-middle" style={{ display: 'block' }}>
+                                                                                <div className='fw-bold'>{item.name} </div>
+                                                                                <div className='text-muted'>{item.detail} </div>
+                                                                            </td>
+                                                                            <td className="align-middle text-center">
+                                                                                <label className="custom-control custom-checkbox-md">
+                                                                                    <input
+                                                                                        type="checkbox"
+                                                                                        className="custom-control-input"
+                                                                                        name="example-checkbox5"
+                                                                                        defaultValue="option5"
+                                                                                        defaultChecked=""
+                                                                                    />
+                                                                                    <span className="custom-control-label"></span>
+                                                                                </label>
+                                                                            </td>
+                                                                        </tr>
+                                                                    )
+                                                                })
+                                                            }
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-6">
+                                            <label className="form-label mb-3"> İlişkili İşletmeler</label>
+                                            <div className="e-table px-5 pb-5" style={{ border: '1px dashed black', borderRadius: '10px', overflow: 'scroll', whiteSpace: 'nowrap', height: '350px' }}>
+                                                <div className="table-responsive table-lg">
+                                                    <table className="table mb-0">
+                                                        <tbody>
+                                                            {
+                                                                List1?.map((item, index) => {
+                                                                    return (
+                                                                        <tr>
+                                                                            <td className="align-middle text-center">
+                                                                                <img
+                                                                                    alt="image"
+                                                                                    className="avatar avatar-md br-7"
+                                                                                    src={item.photo}
+                                                                                />
+                                                                            </td>
+                                                                            <td className="text-nowrap align-middle" style={{ display: 'block' }}>
+                                                                                <div className='fw-bold'>{item.name} </div>
+                                                                                <div className='text-muted'>{item.detail} </div>
+                                                                            </td>
+                                                                            <td className="align-middle text-center">
+                                                                                <label className="custom-control custom-checkbox-md">
+                                                                                    <input
+                                                                                        type="checkbox"
+                                                                                        className="custom-control-input"
+                                                                                        name="example-checkbox5"
+                                                                                        defaultValue="option5"
+                                                                                        defaultChecked=""
+                                                                                    />
+                                                                                    <span className="custom-control-label"></span>
+                                                                                </label>
+                                                                            </td>
+                                                                        </tr>
+                                                                    )
+                                                                })
+                                                            }
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-
-
                                 </div>
-
                                 <div className="tab-pane" id="tab8">
                                 </div>
                             </div>
@@ -282,7 +608,7 @@ function CampaignInsert() {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 
